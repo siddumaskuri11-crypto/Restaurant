@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tandoor Restaurant | Best Biryani in Secunderabad</title>
+    <meta name="description" content="Tandoor Restaurant - Veg & Non Veg in Secunderabad. Serving authentic Hyderabadi biryani, tandoori items, seafood, and late-night food. Dine-in, drive-through, and delivery.">
+    <meta name="keywords" content="Best biryani in Secunderabad, Best veg and non veg restaurant in Secunderabad, Late night restaurants in Secunderabad, Family restaurant near me">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Tandoor<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="#order" class="btn sticky-order-btn">Order Now</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Secunderabad’s Favorite Destination for Biryani & Family Dining</h1>
+            <p>Fresh Veg & Non-Veg Food | Chai | Drive-Through | Delivery Available</p>
+            <div class="hero-btns">
+                <a href="#order" class="btn btn-primary">Order Now</a>
+                <a href="#" class="btn btn-secondary book-table-btn">Book Table</a>
+                <a href="tel:6300285066" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><i class="fas fa-star"></i> 3.7 Star Rating</div>
+                <div class="stat-item"><i class="fas fa-comment-dots"></i> 2,900+ Reviews</div>
+                <div class="stat-item"><i class="fas fa-clock"></i> Open till Midnight</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="./images/interior.png" alt="Tandoor Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <h3>Taste the Tradition of Hyderabad</h3>
+                    <p>Located in the heart of Secunderabad, Tandoor Restaurant brings you the authentic flavors of Indian cuisine. Whether you are craving the rich spices of a Hyderabadi Biryani or a comforting cup of chai, we have something for everyone.</p>
+                    <p>We pride ourselves on providing high-quality, delicious Veg and Non-Veg dishes at affordable prices. From quick lunches for office goers to relaxed family dinners, our warm ambiance and dedicated service ensure a memorable dining experience.</p>
+                    <a href="#menu" class="btn btn-primary" style="margin-top: 1rem;">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section bg-dark" id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-filter="all">All</button>
+                <button class="menu-tab" data-filter="biryani">Biryani</button>
+                <button class="menu-tab" data-filter="tandoori">Tandoori</button>
+                <button class="menu-tab" data-filter="veg">Veg</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card" data-category="biryani">
+                    <div class="menu-card-img biryani">
+                        <span class="menu-price">₹280</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Hyderabadi Chicken Biryani</h3>
+                        <p>Aromatic basmati rice cooked with tender chicken and traditional spices.</p>
+                        <div class="menu-card-footer">
+                            <span style="color: var(--color-primary); font-weight: bold;"><i class="fas fa-leaf" style="display:none;"></i> Non-Veg</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-card" data-category="biryani">
+                    <div class="menu-card-img biryani">
+                        <span class="menu-price">₹350</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Mutton Dum Biryani</h3>
+                        <p>Rich and flavorful mutton slow-cooked with basmati rice and secret spices.</p>
+                        <div class="menu-card-footer">
+                            <span style="color: var(--color-primary); font-weight: bold;">Non-Veg</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="menu-card" data-category="tandoori">
+                    <div class="menu-card-img tandoori">
+                        <span class="menu-price">₹250</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Tandoori Chicken</h3>
+                        <p>Smoky and juicy chicken marinated in yogurt and spices, roasted in clay oven.</p>
+                        <div class="menu-card-footer">
+                            <span style="color: var(--color-primary); font-weight: bold;">Non-Veg</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="menu-card" data-category="veg">
+                    <div class="menu-card-img veg">
+                        <span class="menu-price">₹180</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Soft paneer cubes in a creamy and rich tomato-based gravy.</p>
+                        <div class="menu-card-footer">
+                            <span style="color: #2e7d32; font-weight: bold;"><i class="fas fa-leaf"></i> Veg</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="menu-card" data-category="biryani">
+                    <div class="menu-card-img biryani">
+                        <span class="menu-price">₹650</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Family Biryani Pack</h3>
+                        <p>Perfect for families! Includes large portion of biryani, starters, and soft drinks.</p>
+                        <div class="menu-card-footer">
+                            <span style="color: var(--color-primary); font-weight: bold;">Non-Veg</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="menu-card" data-category="all">
+                    <div class="menu-card-img chai">
+                        <span class="menu-price">₹25</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Irani Chai</h3>
+                        <p>Authentic thick and creamy tea, perfect for late-night cravings.</p>
+                        <div class="menu-card-footer">
+                            <span style="color: #2e7d32; font-weight: bold;"><i class="fas fa-leaf"></i> Veg</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://www.zomato.com/hyderabad/tandoor-restaurant-bakers-shamirpet/order" target="_blank" class="btn btn-primary">View Full Menu Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" style="background-color: #1A1A1A; color: white;">
+        <div class="container">
+            <h2 style="color: var(--color-secondary);">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-wallet"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p style="color: #aaa; margin-top: 0.5rem; font-size: 0.9rem;">Delicious meals that fit every budget, specially catering to students and families.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Family-Friendly</h3>
+                    <p style="color: #aaa; margin-top: 0.5rem; font-size: 0.9rem;">Spacious, comfortable seating ideal for large groups and family gatherings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                    <h3>Drive-Through</h3>
+                    <p style="color: #aaa; margin-top: 0.5rem; font-size: 0.9rem;">Quick and convenient options for travelers looking for an easy meal grab.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                    <h3>Late Night Service</h3>
+                    <p style="color: #aaa; margin-top: 0.5rem; font-size: 0.9rem;">Satisfy those midnight biryani cravings. We are open till midnight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best place for biryani and chai lovers in Secunderabad! The portions are generous and the prices are very affordable for families."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-img">S</div>
+                        <div class="reviewer-info">
+                            <h4>Suresh Kumar</h4>
+                            <span>Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p class="review-text">"Very tasty vegetarian food. Usually, restaurants only focus on non-veg, but their paneer dishes are equally fantastic."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-img">P</div>
+                        <div class="reviewer-info">
+                            <h4>Priya Reddy</h4>
+                            <span>Dine-in Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Great seafood options and the tandoori is perfectly cooked. The late-night service is a lifesaver for office employees working late."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-img">M</div>
+                        <div class="reviewer-info">
+                            <h4>Mohammed Ali</h4>
+                            <span>Delivery Order</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section bg-dark">
+        <div class="container">
+            <h2>Our Atmosphere</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="./images/interior.png" alt="Restaurant Interior"></div>
+                <div class="gallery-item"><img src="./images/tandoori.png" alt="Tandoori Item"></div>
+                <div class="gallery-item"><img src="./images/hero.png" alt="Biryani"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chai"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Food"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Ordering & Contact -->
+    <section class="section" id="order">
+        <div class="container">
+            <h2>Order & Visit Us</h2>
+            <div class="order-contact-container">
+                <div>
+                    <h3 style="color: var(--color-dark); margin-bottom: 1rem;">Order Online</h3>
+                    <p style="color: var(--color-text-light);">Get your favorite meals delivered hot and fresh right to your doorstep. Choose your preferred platform below.</p>
+                    <div class="order-platforms">
+                        <a href="https://www.zomato.com/hyderabad/tandoor-restaurant-bakers-shamirpet/order" target="_blank" class="platform-btn zomato-btn">
+                            <i class="fas fa-motorcycle"></i> Order on Zomato
+                        </a>
+                        <a href="https://www.swiggy.com/city/hyderabad/tandoor-multicuisine-restaurant-road-shamirpet-rest71751" target="_blank" class="platform-btn swiggy-btn">
+                            <i class="fas fa-bolt"></i> Order on Swiggy
+                        </a>
+                        <a href="https://wa.me/916300285066?text=Hello%20Tandoor%20Restaurant!%20I%20would%20like%20to%20place%20a%20food%20order." target="_blank" class="platform-btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Direct WhatsApp Order
+                        </a>
+                    </div>
+                </div>
+                
+                <div id="contact">
+                    <h3 style="color: var(--color-dark); margin-bottom: 1rem;">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 style="color: var(--color-dark); margin-bottom: 0.2rem;">Address</h4>
+                                <p style="color: var(--color-text-light);">Secunderabad, Telangana 500078</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4 style="color: var(--color-dark); margin-bottom: 0.2rem;">Phone</h4>
+                                <p style="color: var(--color-text-light);">63002 85066</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4 style="color: var(--color-dark); margin-bottom: 0.2rem;">Business Hours</h4>
+                                <p style="color: var(--color-text-light);">Mon - Sun: 11:00 AM - 12:00 Midnight</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121822.46333912952!2d78.41160351336148!3d17.441864195156686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a2444d41bf1%3A0x6b403d6d0203f5d5!2sSecunderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">Tandoor<span>.</span></a>
+                    <p style="color: #aaa; margin-top: 1rem; font-size: 0.9rem;">Secunderabad's preferred destination for authentic Hyderabadi biryani, family dining, and late-night food.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#" class="book-table-btn">Reserve a Table</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Dine-In</a></li>
+                        <li><a href="#">No-Contact Delivery</a></li>
+                        <li><a href="#">Drive-Through</a></li>
+                        <li><a href="#">Party Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Tandoor Restaurant - Veg & Non Veg. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/916300285066?text=Hello%20Tandoor%20Restaurant!%20I%20would%20like%20to%20book%20a%20table%20or%20ask%20a%20question." class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Reservation Modal -->
+    <div class="modal" id="reservationModal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h3 style="color: var(--color-dark); margin-bottom: 1.5rem; font-family: var(--font-heading); font-size: 1.8rem;">Book a Table</h3>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" required placeholder="Your contact number">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" class="form-control" required min="1" max="20" placeholder="E.g. 4">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date & Time</label>
+                    <input type="datetime-local" id="date" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
